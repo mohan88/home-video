@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by mohan on 10/17/16.
+ * Class containing list of collections - simple class with getters.
  */
-
 public class CollectionList {
 
     private List<Collection> collectionList = new ArrayList<>();
