@@ -1,5 +1,7 @@
 package com.hobby.homevideo.presenter.object;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.hobby.homevideo.AspectRatioImageView;
 import com.hobby.homevideo.R;
+import com.hobby.homevideo.fragment.PictureActivity;
 import com.hobby.homevideo.model.DataObject;
 import com.hobby.homevideo.presenter.ObjectPresenter;
 
@@ -37,9 +41,18 @@ public class PicturePresenter implements ObjectPresenter {
             // Error: Invalid viewholder type
             return;
         }
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Context context = v.getContext();
+                final Intent intent = PictureActivity.createIntent(context, object);
+                context.startActivity(intent);
+            }
+        });
         final PictureViewHolder pictureViewHolder = (PictureViewHolder) viewHolder;
         Glide.with(viewHolder.itemView.getContext())
                 .load(object.getAttributes().get("thumbnail"))
+                .asBitmap()
                 .into(pictureViewHolder.getPictureThumbnail());
         pictureViewHolder.getPictureTitle().setText(object.getTitle());
     }
@@ -50,8 +63,8 @@ public class PicturePresenter implements ObjectPresenter {
             super(itemView);
         }
 
-        public ImageView getPictureThumbnail() {
-            return (ImageView) itemView.findViewById(R.id.picture_thumbnail);
+        public AspectRatioImageView getPictureThumbnail() {
+            return (AspectRatioImageView) itemView.findViewById(R.id.picture_thumbnail);
         }
 
         public TextView getPictureTitle() {

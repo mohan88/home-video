@@ -41,6 +41,6 @@ public class Collection {
     }
 
     public List<DataObject> getDataObjects() {
-        return dataObjects;
+        return this.dataObjects;
     }
 }

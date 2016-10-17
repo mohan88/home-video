@@ -62,9 +62,9 @@ public class DataService {
 
     private Collection parseCollection(final JSONObject collectionObject) throws JSONException {
         final String id = collectionObject.getString("id");
-        final String type = collectionObject.getString("id");
-        final String title = collectionObject.getString("id");
-        final String description = collectionObject.getString("id");
+        final String type = collectionObject.getString("type");
+        final String title = collectionObject.getString("title");
+        final String description = collectionObject.getString("description");
         final JSONArray objectsArr = collectionObject.getJSONArray("dataObjects");
         final List<DataObject> objects = new ArrayList<>();
         for (int i = 0; i < objectsArr.length(); i++) {
@@ -76,9 +76,9 @@ public class DataService {
 
     private DataObject parseDataObject(final JSONObject dataObject) throws JSONException {
         final String id = dataObject.getString("id");
-        final int type = dataObject.getInt("id");
-        final String title = dataObject.getString("id");
-        final String description = dataObject.getString("id");
+        final int type = Integer.parseInt(dataObject.getString("type"));
+        final String title = dataObject.getString("title");
+        final String description = dataObject.getString("description");
         final Map<String, String> attributes = new HashMap<>();
         final String thumbnail = dataObject.optString("thumbnail", "");
         final String url = dataObject.optString("url", "");

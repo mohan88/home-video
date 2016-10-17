@@ -8,14 +8,14 @@
       "dataObjects":[
         {
           "id":"collection_home1_object1",
-          "type":"picture",
+          "type":"1",
           "title":"Picture Home 11",
           "description": "This is a Picture.",
           "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
         },
         {
           "id":"collection_home1_object2",
-          "type":"video",
+          "type":"2",
           "title":"Video Home 12",
           "description": "This is a Video.",
           "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
@@ -23,14 +23,14 @@
         },
         {
           "id":"collection_home1_object3",
-          "type":"picture",
+          "type":"1",
           "title":"Picture Home 13",
           "description": "This is a Picture.",
           "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
         },
         {
           "id":"collection_home1_object4",
-          "type":"video",
+          "type":"2",
           "title":"Video Home 14",
           "description": "This is a Video.",
           "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
@@ -38,14 +38,14 @@
         },
         {
           "id":"collection_home1_object5",
-          "type":"picture",
+          "type":"1",
           "title":"Picture Home 15",
           "description": "This is a Picture.",
           "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
         },
         {
           "id":"collection_home1_object6",
-          "type":"video",
+          "type":"2",
           "title":"Video Home 16",
           "description": "This is a Video.",
           "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
@@ -53,14 +53,14 @@
         },
         {
           "id":"collection_home1_object7",
-          "type":"picture",
+          "type":"1",
           "title":"Picture Home 17",
           "description": "This is a Picture.",
           "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
         },
         {
           "id":"collection_home1_object8",
-          "type":"video",
+          "type":"2",
           "title":"Video Home 18",
           "description": "This is a Video.",
           "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
