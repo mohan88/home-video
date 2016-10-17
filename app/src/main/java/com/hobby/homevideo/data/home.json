@@ -1,0 +1,208 @@
+{
+  "home": [
+    {
+      "id":"collection_home1",
+      "type":"horizontal",
+      "title":"Home One",
+      "description":"",
+      "dataObjects":[
+        {
+          "id":"collection_home1_object1",
+          "type":"picture",
+          "title":"Picture Home 11",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
+        },
+        {
+          "id":"collection_home1_object2",
+          "type":"video",
+          "title":"Video Home 12",
+          "description": "This is a Video.",
+          "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home1_object3",
+          "type":"picture",
+          "title":"Picture Home 13",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
+        },
+        {
+          "id":"collection_home1_object4",
+          "type":"video",
+          "title":"Video Home 14",
+          "description": "This is a Video.",
+          "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home1_object5",
+          "type":"picture",
+          "title":"Picture Home 15",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
+        },
+        {
+          "id":"collection_home1_object6",
+          "type":"video",
+          "title":"Video Home 16",
+          "description": "This is a Video.",
+          "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home1_object7",
+          "type":"picture",
+          "title":"Picture Home 17",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
+        },
+        {
+          "id":"collection_home1_object8",
+          "type":"video",
+          "title":"Video Home 18",
+          "description": "This is a Video.",
+          "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        }
+      ]
+    },
+    {
+      "id":"collection_home2",
+      "type":"vertical",
+      "title":"Home Two",
+      "description":"",
+      "dataObjects":[
+        {
+          "id":"collection_home2_object1",
+          "type":"picture",
+          "title":"Picture Home 21",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
+        },
+        {
+          "id":"collection_home2_object2",
+          "type":"video",
+          "title":"Video Home 22",
+          "description": "This is a Video.",
+          "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home2_object3",
+          "type":"picture",
+          "title":"Picture Home 23",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
+        },
+        {
+          "id":"collection_home2_object4",
+          "type":"video",
+          "title":"Video Home 24",
+          "description": "This is a Video.",
+          "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home2_object5",
+          "type":"picture",
+          "title":"Picture Home 25",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
+        },
+        {
+          "id":"collection_home2_object6",
+          "type":"video",
+          "title":"Video Home 26",
+          "description": "This is a Video.",
+          "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home2_object7",
+          "type":"picture",
+          "title":"Picture Home 27",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
+        },
+        {
+          "id":"collection_home2_object8",
+          "type":"video",
+          "title":"Video Home 28",
+          "description": "This is a Video.",
+          "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        }
+      ]
+    },
+    {
+      "id":"collection_home3",
+      "type":"vertical",
+      "title":"Home Three",
+      "description":"",
+      "dataObjects":[
+        {
+          "id":"collection_home3_object1",
+          "type":"picture",
+          "title":"Picture Home 31",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
+        },
+        {
+          "id":"collection_home3_object2",
+          "type":"video",
+          "title":"Video Home 32",
+          "description": "This is a Video.",
+          "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home3_object3",
+          "type":"picture",
+          "title":"Picture Home 33",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
+        },
+        {
+          "id":"collection_home3_object4",
+          "type":"video",
+          "title":"Video Home 34",
+          "description": "This is a Video.",
+          "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home3_object5",
+          "type":"picture",
+          "title":"Picture Home 35",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/eklund5.jpg"
+        },
+        {
+          "id":"collection_home3_object6",
+          "type":"video",
+          "title":"Video Home 36",
+          "description": "This is a Video.",
+          "thumbnail":"http://wallpapercave.com/wp/wQ1eED0.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        },
+        {
+          "id":"collection_home3_object7",
+          "type":"picture",
+          "title":"Picture Home 37",
+          "description": "This is a Picture.",
+          "thumbnail":"http://www.spaceweather.com/aurora/images/20mar01/simpson2.jpg"
+        },
+        {
+          "id":"collection_home3_object8",
+          "type":"video",
+          "title":"Video Home 38",
+          "description": "This is a Video.",
+          "thumbnail":"http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-classic-car.jpg",
+          "url":"http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        }
+      ]
+    }
+  ]
+}
