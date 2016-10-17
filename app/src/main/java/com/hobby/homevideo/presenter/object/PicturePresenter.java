@@ -1,8 +1,15 @@
 package com.hobby.homevideo.presenter.object;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.hobby.homevideo.R;
 import com.hobby.homevideo.model.DataObject;
 import com.hobby.homevideo.presenter.ObjectPresenter;
 
@@ -19,8 +26,9 @@ public class PicturePresenter implements ObjectPresenter {
     }
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder() {
-        return null;
+    public RecyclerView.ViewHolder onCreateViewHolder(final ViewGroup parent) {
+        final FrameLayout view = (FrameLayout) LayoutInflater.from(parent.getContext()).inflate(R.layout.presenter_object_picture, parent, false);
+        return new PictureViewHolder(view);
     }
 
     @Override
@@ -29,13 +37,25 @@ public class PicturePresenter implements ObjectPresenter {
             // Error: Invalid viewholder type
             return;
         }
-
+        final PictureViewHolder pictureViewHolder = (PictureViewHolder) viewHolder;
+        Glide.with(viewHolder.itemView.getContext())
+                .load(object.getAttributes().get("thumbnail"))
+                .into(pictureViewHolder.getPictureThumbnail());
+        pictureViewHolder.getPictureTitle().setText(object.getTitle());
     }
 
     private static class PictureViewHolder extends RecyclerView.ViewHolder {
 
         public PictureViewHolder(View itemView) {
             super(itemView);
+        }
+
+        public ImageView getPictureThumbnail() {
+            return (ImageView) itemView.findViewById(R.id.picture_thumbnail);
+        }
+
+        public TextView getPictureTitle() {
+            return (TextView) itemView.findViewById(R.id.picture_title);
         }
     }
 }

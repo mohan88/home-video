@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/picture_parent"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.hobby.homevideo.AspectRatioImageView
+        android:id="@+id/picture_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="image"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        app:widthRatio="16"
+        app:heightRatio="9" />
+
+    <TextView
+        android:id="@+id/picture_title"
+        android:textSize="20sp"
+        android:layout_gravity="bottom|start"
+        android:text="Picture 1234"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
