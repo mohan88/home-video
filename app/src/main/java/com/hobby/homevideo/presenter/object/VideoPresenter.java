@@ -12,8 +12,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.hobby.homevideo.R;
-import com.hobby.homevideo.fragment.PictureActivity;
-import com.hobby.homevideo.fragment.VideoActivity;
+import com.hobby.homevideo.activity.VideoActivity;
 import com.hobby.homevideo.model.DataObject;
 import com.hobby.homevideo.presenter.ObjectPresenter;
 
@@ -51,7 +50,7 @@ public class VideoPresenter implements ObjectPresenter {
         });
         final VideoViewHolder videoViewHolder = (VideoViewHolder) viewHolder;
         Glide.with(viewHolder.itemView.getContext())
-                .load(object.getAttributes().get("thumbnail"))
+                .load(R.drawable.video)
                 .into(videoViewHolder.getVideoThumbnail());
         videoViewHolder.getVideoTitle().setText(object.getTitle());
     }

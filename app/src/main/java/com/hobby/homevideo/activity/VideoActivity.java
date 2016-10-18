@@ -1,10 +1,11 @@
-package com.hobby.homevideo.fragment;
+package com.hobby.homevideo.activity;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.hobby.homevideo.R;
@@ -34,9 +35,14 @@ public class VideoActivity extends Activity {
     public void onResume() {
         super.onResume();
         final VideoView videoView = (VideoView) findViewById(R.id.video_view);
+        videoView.setZOrderOnTop(true);
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(videoView);
+        mediaController.setMediaPlayer(videoView);
         if (mDataObject != null) {
             final String videoUrl = mDataObject.getAttributes().get("url");
             videoView.setVideoURI(Uri.parse(videoUrl));
+            videoView.requestFocus();
             videoView.start();
         }
     }

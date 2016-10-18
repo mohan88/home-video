@@ -37,11 +37,6 @@ public class HomeFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mCollectionList = mDataService.getHomeData(getActivity());
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
         if (mCollectionList != null) {
             for (Collection collection : mCollectionList.getCollections()) {
                 final CollectionPresenter presenter = mPresenterFactory.getCollectionPresenter(collection.getType());

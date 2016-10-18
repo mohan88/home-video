@@ -1,4 +1,4 @@
-package com.hobby.homevideo;
+package com.hobby.homevideo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.hobby.homevideo.R;
 import com.hobby.homevideo.fragment.CategoryFragment;
 import com.hobby.homevideo.fragment.HomeFragment;
 import com.hobby.homevideo.presenter.PresenterFactory;
@@ -23,7 +24,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         new PresenterInitializerImpl().initializePresenters(PresenterFactory.getInstance());
         setContentView(R.layout.activity_main);
-        getFragmentManager().beginTransaction().replace(R.id.activity_parent, new HomeFragment()).commit();
+        getFragmentManager().beginTransaction().replace(R.id.activity_parent, new HomeFragment()).addToBackStack("home").commit();
     }
 
     @Override
@@ -33,16 +34,25 @@ public class MainActivity extends Activity {
     }
 
     @Override
+    public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() > 1) {
+            super.onBackPressed();
+        } else {
+            finish();
+        }
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.category1) {
             final CategoryFragment categoryFragmentOne = CategoryFragment.newInstance("category1.json");
-            getFragmentManager().beginTransaction().replace(R.id.activity_parent, categoryFragmentOne).commit();
+            getFragmentManager().beginTransaction().replace(R.id.activity_parent, categoryFragmentOne).addToBackStack("category1").commit();
             return true;
         }
         if (id == R.id.category2) {
             final CategoryFragment categoryFragmentTwo = CategoryFragment.newInstance("category2.json");
-            getFragmentManager().beginTransaction().replace(R.id.activity_parent, categoryFragmentTwo).commit();
+            getFragmentManager().beginTransaction().replace(R.id.activity_parent, categoryFragmentTwo).addToBackStack("category2").commit();
             return true;
         }
         return super.onOptionsItemSelected(item);

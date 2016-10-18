@@ -1,4 +1,4 @@
-package com.hobby.homevideo.fragment;
+package com.hobby.homevideo.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -38,9 +38,8 @@ public class PictureActivity extends Activity {
             final ImageView image = (ImageView) findViewById(R.id.image);
             final TextView title = (TextView) findViewById(R.id.title);
             final TextView description = (TextView) findViewById(R.id.description);
-            final String thumbnail = mDataObject.getAttributes().get("thumbnail");
             Glide.with(this)
-                    .load(thumbnail)
+                    .load(R.drawable.picture)
                     .into(image);
             title.setText(mDataObject.getTitle());
             description.setText(mDataObject.getDescription());

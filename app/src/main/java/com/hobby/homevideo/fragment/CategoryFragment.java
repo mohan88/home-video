@@ -45,11 +45,6 @@ public class CategoryFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         final String categoryName = getArguments().getString("categoryName");
         mCollection = mDataService.getCategoryData(getActivity(), categoryName);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
         if (mCollection != null) {
             final CollectionPresenter presenter = mPresenterFactory.getCollectionPresenter(mCollection.getType());
             presenter.present(getActivity(), mCollection, mParent);

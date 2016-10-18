@@ -7,13 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.hobby.homevideo.AspectRatioImageView;
 import com.hobby.homevideo.R;
-import com.hobby.homevideo.fragment.PictureActivity;
+import com.hobby.homevideo.activity.PictureActivity;
 import com.hobby.homevideo.model.DataObject;
 import com.hobby.homevideo.presenter.ObjectPresenter;
 
@@ -51,8 +50,7 @@ public class PicturePresenter implements ObjectPresenter {
         });
         final PictureViewHolder pictureViewHolder = (PictureViewHolder) viewHolder;
         Glide.with(viewHolder.itemView.getContext())
-                .load(object.getAttributes().get("thumbnail"))
-                .asBitmap()
+                .load(R.drawable.picture)
                 .into(pictureViewHolder.getPictureThumbnail());
         pictureViewHolder.getPictureTitle().setText(object.getTitle());
     }

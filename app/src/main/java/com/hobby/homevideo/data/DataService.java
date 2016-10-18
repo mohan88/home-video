@@ -80,9 +80,7 @@ public class DataService {
         final String title = dataObject.getString("title");
         final String description = dataObject.getString("description");
         final Map<String, String> attributes = new HashMap<>();
-        final String thumbnail = dataObject.optString("thumbnail", "");
         final String url = dataObject.optString("url", "");
-        attributes.put("thumbnail", thumbnail);
         attributes.put("url", url);
         return new DataObject(id, type, title, description, attributes);
     }
