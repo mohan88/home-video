@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -30,7 +29,7 @@ public class HorizontalCollectionPresenter implements CollectionPresenter {
     @Override
     public void present(final Context context, final Collection collection, final ViewGroup parent) {
         addTitleView(collection, parent);
-        final RecyclerView recyclerView = (RecyclerView) LayoutInflater.from(context).inflate(R.layout.presenter_collection, null);
+        final RecyclerView recyclerView = (RecyclerView) LayoutInflater.from(context).inflate(R.layout.presenter_collection, parent, false);
         GridLayoutManager layoutManager = new GridLayoutManager(context, 1, GridLayoutManager.HORIZONTAL, false);
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setHasFixedSize(true);
